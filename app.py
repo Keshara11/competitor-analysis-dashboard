@@ -160,7 +160,7 @@ st.set_page_config(page_title="Competitor Analysis | BizBuddyBot", page_icon="�
 df = generate_dataset()
 model, model_accuracy = train_sentiment_model(df)
 
-st.title("📊 Competitor Analysis Dashboard")
+st.title("Competitor Analysis Dashboard")
 st.caption("Part of the BizBuddyBot SME Toolkit - covers the same 15 industry categories used by the chatbot's guided business journey.")
 
 # ── Sidebar filters ──
@@ -227,7 +227,7 @@ with c4:
 st.divider()
 
 # ── Sentiment predictor tool ──
-st.subheader("🔮 Sentiment Predictor")
+st.subheader(" Sentiment Predictor")
 st.caption("Predict the likely customer sentiment for any industry + region combination.")
 pc1, pc2, pc3 = st.columns([2, 2, 1])
 pred_industry = pc1.selectbox("Industry ", INDUSTRY_TAXONOMY, key="pred_industry")
